@@ -3,7 +3,6 @@
 
 DevOpsShellBash
 
-
 About Bash projects
 -------------------
 
@@ -201,7 +200,7 @@ $
 -   Directory: `0x00-shell_basics`
 -   File: `0-current_working_directory`
 
- Done? Help Check your code Get a sandbox
+ Done! Help Check your code Get a sandbox
 
 ### 1\. What's in there?
 
@@ -225,7 +224,7 @@ $
 -   Directory: `0x00-shell_basics`
 -   File: `1-listit`
 
- Done? Help Check your code Get a sandbox
+ Done! Help Check your code Get a sandbox
 
 ### 2\. There is no place like home
 
@@ -253,7 +252,7 @@ julien@ubuntu:~$
 -   Directory: `0x00-shell_basics`
 -   File: `2-bring_me_home`
 
- Done? Help Check your code Get a sandbox
+ Done! Help Check your code Get a sandbox
 
 ### 3\. The long format
 
@@ -280,7 +279,7 @@ $
 -   Directory: `0x00-shell_basics`
 -   File: `3-listfiles`
 
- Done? Help Check your code Get a sandbox
+ Done! Help Check your code Get a sandbox
 
 ### 4\. Hidden files
 
@@ -310,7 +309,7 @@ $
 -   Directory: `0x00-shell_basics`
 -   File: `4-listmorefiles`
 
- Done? Help Check your code Get a sandbox
+ Done! Help Check your code Get a sandbox
 
 ### 5\. I love numbers
 
@@ -345,7 +344,7 @@ $
 -   Directory: `0x00-shell_basics`
 -   File: `5-listfilesdigitonly`
 
- Done? Help Check your code Get a sandbox
+ Done! Help Check your code Get a sandbox
 
 ### 6\. Welcome
 
@@ -369,7 +368,7 @@ $
 -   Directory: `0x00-shell_basics`
 -   File: `6-firstdirectory`
 
- Done? Help Check your code Get a sandbox
+ Done! Help Check your code Get a sandbox
 
 ### 7\. Betty in my first directory
 
@@ -393,7 +392,7 @@ $
 -   Directory: `0x00-shell_basics`
 -   File: `7-movethatfile`
 
- Done? Help Check your code Get a sandbox
+ Done! Help Check your code Get a sandbox
 
 ### 8\. Bye bye Betty
 
@@ -418,7 +417,7 @@ $
 -   Directory: `0x00-shell_basics`
 -   File: `8-firstdelete`
 
- Done? Help Check your code Get a sandbox
+ Done! Help Check your code Get a sandbox
 
 ### 9\. Bye bye My first directory
 
@@ -442,7 +441,7 @@ $
 -   Directory: `0x00-shell_basics`
 -   File: `9-firstdirdeletion`
 
- Done? Help Check your code Get a sandbox
+ Done! Help Check your code Get a sandbox
 
 ### 10\. Back to the future
 
@@ -535,7 +534,7 @@ lrwxrwxrwx  1 ubuntu ubuntu      7 Sep 20 03:24 __ls__ -> /bin/ls
 -   Directory: `0x00-shell_basics`
 -   File: `13-symbolic_link`
 
- Done? Help Check your code Get a sandbox
+ Done! Help Check your code Get a sandbox
 
 ### 14\. Copy HTML files
 
@@ -553,6 +552,185 @@ You can consider that all HTML files have the extension `.html`
 
  Done? Help Check your code Get a sandbox
 
-[Done with the mandatory tasks? Unlock 5 advanced tasks now!](https://alx-intranet.hbtn.io/projects/205/unlock_optionals)
+### 15\. Let's move
+
+#advanced
+
+Create a script that moves all files beginning with an uppercase letter to the directory `/tmp/u`.
+
+You can assume that the directory `/tmp/u` will exist when we will run your script
+
+```
+ubuntu@ip-172-31-63-244:/tmp/sym$ ls -la
+total 148
+drwxrwxr-x  3 ubuntu ubuntu   4096 Sep 20 03:33 .
+drwxrwxrwt 12 root   root   139264 Sep 20 03:26 ..
+-rw-rw-r--  1 ubuntu ubuntu      0 Sep 20 03:32 My_file
+lrwxrwxrwx  1 ubuntu ubuntu      7 Sep 20 03:24 __ls__ -> /bin/ls
+-rw-rw-r--  1 ubuntu ubuntu      0 Sep 20 03:32 Elif_ym
+-rw-rw-r--  1 ubuntu ubuntu      0 Sep 20 03:32 random_file
+ubuntu@ip-172-31-63-244:/tmp/sym$ ls -la /tmp/u
+total 8
+drwxrwxr-x 2 ubuntu ubuntu 4096 Sep 20 03:33 .
+drwxrwxr-x 3 ubuntu ubuntu 4096 Sep 20 03:33 ..
+ubuntu@ip-172-31-63-244:/tmp/sym$ ./100-lets_move
+ubuntu@ip-172-31-63-244:/tmp/sym$ ls -la
+total 148
+drwxrwxr-x  3 ubuntu ubuntu   4096 Sep 20 03:33 .
+drwxrwxrwt 12 root   root   139264 Sep 20 03:26 ..
+lrwxrwxrwx  1 ubuntu ubuntu      7 Sep 20 03:24 __ls__ -> /bin/ls
+-rw-rw-r--  1 ubuntu ubuntu      0 Sep 20 03:32 random_file
+ubuntu@ip-172-31-63-244:/tmp/sym$ ls -la /tmp/u
+total 8
+drwxrwxr-x 2 ubuntu ubuntu 4096 Sep 20 03:33 .
+drwxrwxr-x 3 ubuntu ubuntu 4096 Sep 20 03:33 ..
+-rw-rw-r-- 1 ubuntu ubuntu    0 Sep 20 03:32 My_file
+-rw-rw-r-- 1 ubuntu ubuntu    0 Sep 20 03:32 Elif_ym
+
+```
+
+**Repo:**
+
+-   GitHub repository: `alx-system_engineering-devops`
+-   Directory: `0x00-shell_basics`
+-   File: `100-lets_move`
+
+ Done? Help Check your code Get a sandbox
+
+### 16\. Clean Emacs
+
+#advanced
+
+Create a script that deletes all files in the current working directory that end with the character `~`.
+
+```
+ubuntu@ip-172-31-63-244:/tmp/sym$ ls
+main.c  main.c~  Makefile~
+ubuntu@ip-172-31-63-244:/tmp/sym$ ./101-clean_emacs
+ubuntu@ip-172-31-63-244:/tmp/emacs$ ls
+main.c
+ubuntu@ip-172-31-63-244:/tmp/emacs$
+
+```
+
+**Repo:**
+
+-   GitHub repository: `alx-system_engineering-devops`
+-   Directory: `0x00-shell_basics`
+-   File: `101-clean_emacs`
+
+ Done? Help Check your code Get a sandbox
+
+### 17\. Tree
+
+#advanced
+
+Create a script that creates the directories `welcome/`, `welcome/to/` and `welcome/to/school` in the current directory.
+
+You are only allowed to use two spaces (and lines) in your script, not more.
+
+```
+julien@ubuntu:/tmp/h$ ls -l
+total 4
+-rwxrw-r-- 1 julien julien 44 Sep 20 12:09 102-tree
+julien@ubuntu:/tmp/h$ wc -l 102-tree
+2 102-tree
+julien@ubuntu:/tmp/h$ head -1 102-tree
+#!/bin/bash
+julien@ubuntu:/tmp/h$ tr -cd ' ' < 102-tree | wc -c # you do not have to understand this yet, but the result should be 2, 1 or 0
+2
+julien@ubuntu:/tmp/h$ ./102-tree
+julien@ubuntu:/tmp/h$ ls
+102-tree  welcome
+julien@ubuntu:/tmp/h$ ls welcome/
+to
+julien@ubuntu:/tmp/h$ ls -l welcome/to
+total 4
+drwxrwxr-x 2 julien julien 4096 Sep 20 12:11 school
+julien@ubuntu:/tmp/h$
+
+```
+
+**Repo:**
+
+-   GitHub repository: `alx-system_engineering-devops`
+-   Directory: `0x00-shell_basics`
+-   File: `102-tree`
+
+ Done? Help Check your code Get a sandbox
+
+### 18\. Life is a series of commas, not periods
+
+#advanced
+
+Write a command that lists all the files and directories of the current directory, separated by commas (`,`).
+
+-   Directory names should end with a slash (`/`)
+
+-   Files and directories starting with a dot (`.`) should be listed
+
+-   The listing should be alpha ordered, except for the directories `.` and `..` which should be listed at the very beginning
+-   Only digits and letters are used to sort; Digits should come first
+-   You can assume that all the files we will test with will have at least one letter or one digit
+-   The listing should end with a new line
+
+```
+ubuntu@ubuntu:~/$ ls -a
+
+.  ..  0-commas  0-commas-checks  1-empty_casks  2-gifs  3-directories  4-zeros  5-rot13  6-odd  7-sort_rot13  Makefile  quote  .test  test_dir  test.var
+
+ubuntu@ubuntu:~/$ ./103-commas
+
+./, ../, 0-commas, 0-commas-checks/, 1-empty_casks, 2-gifs, 3-directories, 4-zeros, 5-rot13, 6-odd, 7-sort_rot13, Makefile, quote, .test, test_dir/, test.var
+
+ubuntu@ubuntu:~/$
+
+```
+
+**Repo:**
+
+-   GitHub repository: `alx-system_engineering-devops`
+-   Directory: `0x00-shell_basics`
+-   File: `103-commas`
+
+ Done? Help Check your code Get a sandbox
+
+### 19\. File type: School
+
+#advanced
+
+Create a magic file `school.mgc` that can be used with the command `file` to detect `School` data files. `School` data files always contain the string `SCHOOL` at offset 0.
+
+```
+ubuntu@ip-172-31-63-244:/tmp/magic$ cp /bin/ls .
+ubuntu@ip-172-31-63-244:/tmp/magic$ ls -la
+total 268
+drwxrwxr-x  2 ubuntu ubuntu   4096 Sep 20 02:44 .
+drwxrwxrwt 11 root   root   139264 Sep 20 02:44 ..
+-rw-r--r--  1 ubuntu ubuntu    496 Sep 20 02:42 school.mgc
+-rwxr-xr-x  1 ubuntu ubuntu 110080 Sep 20 02:43 ls
+-rw-rw-r--  1 ubuntu ubuntu     50 Sep 20 02:06 thisisaschoolfile
+-rw-rw-r--  1 ubuntu ubuntu     30 Sep 20 02:16 thisisatextfile
+ubuntu@ip-172-31-63-244:/tmp/magic$ file --mime-type -m school.mgc *
+school.mgc:         application/octet-stream
+ls:                    application/octet-stream
+thisisaschoolfile: School
+thisisatextfile:       text/plain
+ubuntu@ip-172-31-63-244:/tmp/magic$ file -m school.mgc *
+school.mgc:         data
+ls:                    data
+thisisaschoolfile: School data
+thisisatextfile:       ASCII text
+ubuntu@ip-172-31-63-244:/tmp/magic$
+
+```
+
+**Repo:**
+
+-   GitHub repository: `alx-system_engineering-devops`
+-   Directory: `0x00-shell_basics`
+-   File: `school.mgc`
+
+ Done? Help Check your code Get a sandbox
 
 Copyright © 2022 ALX, All rights reserved.
