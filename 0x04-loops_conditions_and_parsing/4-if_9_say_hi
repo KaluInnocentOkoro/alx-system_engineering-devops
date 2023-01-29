@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+# Script displays Best school 10X 
+# but displays Hi on the 9th count
+count=0
+while [ $count -lt 10 ]
+do
+	if [ $count -eq 8 ]
+	then
+		echo "Best School"
+		echo "Hi"
+	else
+		echo "Best School"
+	fi
+	((count++))
+done
