@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+# Apache log file path
+log_file="apache-access.log"
+
+# Use awk to extract the IP and HTTP status code from each line of the log file
+# and use a counter to keep track of the number of occurrences for each IP and HTTP status code combination
+# Then, sort the result based on the number of occurrences in descending order
+# and print the result in the format: OCCURENCE_NUMBER IP HTTP_CODE
+awk '{print $1" "$9}' $log_file
