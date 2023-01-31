@@ -6,4 +6,4 @@ log_file="apache-access.log"
 # and use a counter to keep track of the number of occurrences for each IP and HTTP status code combination
 # Then, sort the result based on the number of occurrences in descending order
 # and print the result in the format: OCCURENCE_NUMBER IP HTTP_CODE
-awk '{print $1" "$9}' $log_file
+awk '{print $1" "$9}' $log_file | sort |uniq -c | sort -rn
